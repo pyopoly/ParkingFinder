@@ -1,0 +1,116 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+
+html, body{
+    width:100%;
+    height:101%;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+#search-wrapper{
+    position:absolute;
+    top:0;
+    width:100%;
+}
+h2{
+    position:relative;
+    top:5px;
+    text-align: center;
+    color:white;
+}
+h4{
+  display: none;
+}
+#form{
+    text-align: center;
+    color:white;
+}
+
+fieldset{
+  border:none;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;	
+  border-radius:8px;	
+}
+#search-button{
+    border-style: solid 1px gray;
+    border-radius: 5px;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: normal;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+#list-head-wrapper{
+  position:relative;
+  top:20%;
+  left:5%;
+}
+#list-ul{
+  list-style: none;
+  font-size:12px;
+  margin-left:4%;
+}
+.list-li{
+  width:100%;
+}
+#list-ul li div{
+  background-color: orange;
+  display: block;
+  float: left;
+  padding:3px 15px;
+  margin-left:2px;
+  margin-top:2px;
+  border:2px solid black;
+}
+#list-ul li div.list-city{
+  clear:left;
+  width:100px;
+}
+#list-ul li div.list-area{
+  width:100px;
+}
+#list-ul li div.list-street-name{
+  width:200px;
+}
+#list-ul li div.list-number-meters{
+  width:150px;
+
+}
+#list-ul li div.list-number-tickets{
+  width:150px;
+}
+
+#list-ul li > #button{
+  background-color: white;
+}
+
+#button{
+  width:35px;
+  border-radius: 6px;
+  box-shadow: 1px;
+  cursor:pointer;
+}
+div a{
+  font-weight: bold;
+  text-decoration:none;
+  color:black;
+}
+body{
+    background-color: white;
+    background-image: url("../images/blur.png"), -moz-linear-gradient(45deg, #4682B4 15%, #4169E1 85%);
+	background-image: url("../images/blur.png"), -webkit-linear-gradient(45deg, #4682B4 15%, #4169E1 85%);
+	background-image: url("../images/blur.png"), -ms-linear-gradient(45deg, #4682B4 15%, #4169E1 85%);
+	background-image: url("../images/blur.bg.jpeg"), linear-gradient(45deg, #4682B4 15%, #4169E1 85%);
+}
+#myDiv{
+  position:absolute;
+  top:60px;
+  left:10%;
+  width:80%;
+  height:50%  
+}
+body > h2{
+  text-align: center;
+}

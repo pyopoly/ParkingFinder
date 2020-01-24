@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+    <title>maximize tickets!</title>
+</head>
+<body>
+
+    <section id="search-wrapper">
+      <h2>Vancouver Tickets/Meters Analysis</h2>
+      <form class="form-style-9" id="form" action="/information" method="POST">
+        <fieldset>
+          <input type="text" class="form-content" placeholder="city" value="Vancouver" />
+          <input type="text" class="form-content" placeholder="area"/>
+          <input type="text" class="form-content" placeholder="street-name"/>
+          <label>Start Date: </label><input type="date" class="form-content" required="required" name="dateStart"/>
+          <label>End Date: </label><input type="date" class="form-content" required="required" name="dateEnd"/>
+          <input type="submit" id="search-button" value="search" />
+        </fieldset>
+      </form>
+    </section>
+    
+    <section id="list-head-wrapper">
+      <h4>street details</h4>
+      <ul id="list-ul">
+        <li class="list-li">
+          <div class="list-city">City</div>
+          <div class="list-area">Area</div>
+          <div class="list-street-name">Street Name(block)</div>
+          <div class="list-number-meters">Number of Meters/block</div>
+          <div class="list-number-tickets">Number of Tickets/time</div>
+        </li>
+        {{#each street}}
+        <li class="list-li">
+          <div class="list-city">Vancouver</div>
+          <div class="list-area">Downtown</div>
+          <div class="list-street-name">{{this.street_name}}</div>
+          <div class="list-number-meters">2</div>
+          <div class="list-number-tickets">{{this.amount}}</div>
+          <div id="button"><a href="#">Analyze</a></div>
+        </li>
+        {{/each}} 
+      </ul>
+     
+    </section>
+    
+       <div id="map"></div>    
+{{!-- <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwKIOT2BqfVZ4MlygirFkvuRBoQ7wbdmM&callback=initMap">
+</script> --}}
+</body>
+
+</html>
